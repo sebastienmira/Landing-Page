@@ -63,8 +63,7 @@ body{
   border-radius: 6px;
   background-color: #3882f6;
   color: #f9faf8;
-  padding-left: 4%;
-  padding-right: 4%;
+  padding: 6px 20px 6px 20px;
 }
 
 .body-img{
@@ -96,7 +95,10 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap:100px
+  flex:auto;
+  gap: 70px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .item{
@@ -116,13 +118,22 @@ body{
 
 .quote{
   display: flex;
-  flex-direction: column;
   background-color: #e5e7eb;
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 70px;
   padding-bottom: 70px;
+  justify-content: center;
+}
+
+
+.quote-container{
+  display: flex;
+  flex:auto;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  max-width: 700px;
 }
 
 .quote-txt{
@@ -139,9 +150,37 @@ body{
   color: #1F2937;
 }
 
+
 .invitation{
   background-color: #3882f6;
+  display: flex;
+  flex-direction: row;
+  margin: 10%;
+  padding: 40px 80px 40px 80px;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.invitation-text{
+  display: flex;
+  flex-direction: column;
+}
+
+.call{
+  font-weight: bold;
+  font-size: 24px;
+  color: #e5e7eb;
+}
+
+.call-body{
+  color: #e5e7eb;
+  font-size: 20px;
+}
+
+
+#cta-button{
+  border-width: 3px;
+  border-color: #e5e7eb;
 }
 
 .footnote{
